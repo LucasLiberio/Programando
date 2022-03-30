@@ -67,7 +67,23 @@ div.video {
     position: relative;
 }
 
-div.video > iframe {
+div.video > video {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+video.vsimples {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: none;
+    padding-bottom: none;
+    position: relative;
+}
+
+video.vsimples > video {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -295,37 +311,17 @@ a.externo::after {
     content: '\1F517';
 }
 
-div {
+div#titulodiv {
     text-align: center;
     background-color: rgba(128, 128, 128, 0.589);
 }
 
-div#d1 {
+div.id {
     display: inline-block;
     border: 1px solid black;
     text-align: center;
     height: 200px;
     width: 200px;
-}
-
-div#d2 {
-    display: inline-block;
-    border: 1px solid black;
-    text-align: center;
-    height: 200px;
-    width: 200px;
-}
-
-div#d3 {
-    display: inline-block;
-    border: 1px solid black;
-    text-align: center;
-    height: 200px;
-    width: 200px;
-}
-
-div:hover {
-    background-color: #1470DE;
 }
 
 .ex1 {

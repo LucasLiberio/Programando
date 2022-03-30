@@ -20,7 +20,8 @@
         &lt;head&gt;
             &lt;meta charset="UTF-8"&gt;
             &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;meta name="viewport" content="width=device-width,-----
+                                                                     ----initial-scale=1.0"&gt;
             &lt;title>Meu site&lt;/title&gt;
             <h2>Comandos:</h2>
             link:favicon
@@ -113,11 +114,11 @@
                 Lista Ordenada = ol
                     <pre>
                         &lt;ol type=""                  Start=""&gt; &lt;li&gt; &lt;/ol&gt;
-                    1 = Normal  | 1,2,3...     De qual ponto especifico vai começar
-                    A = Letra M | A,B,C...
-                    a = Letra m | a,b,c...
-                    I = Nº Romano M | I,II,III...
-                    i = Nº Romano m | i,ii,iii...
+1 = Normal  | 1,2,3... |De qual ponto especifico vai começar
+A = Letra M | A,B,C...
+a = Letra m | a,b,c...
+I = Nº Romano M | I,II,III...
+i = Nº Romano m | i,ii,iii...
                     </pre>
                 <ol>
                     <li>
@@ -200,8 +201,8 @@
             </p><br>
             <p>
                 link para fazer <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">download</a>
-                <pre>&lt;a href="local do arquivo" download="o nome do arquivo"
-                    type="comando para o tipo do arquivo"&gt;nome do arquivo&lt;/a&gt;</pre>
+                <pre>&lt;a href="local do arquivo" download="o nome do arquivo"-
+-type="comando para o tipo do arquivo"&gt;nome do arquivo&lt;/a&gt;</pre>
             </p><br> <hr>
             <h2>Imagens Dinâmicas</h2>&lt;Picture&gt; &lt;Source:media:type&gt;<br>
             <picture>
@@ -213,21 +214,32 @@
             <h2>Áudio</h2>
             <audio src="audio/Rap do Deidara (Naruto) - A ARTE É A EXPLOSÃO _ NERD HITS (320 kbps).mp3" controls autoplay>Deidara</audio> <!--Simplificada (n recomendada)-->
             <!--MP3 WAV OGG-->
-            <pre>
-            &lt;audio preload="metadata" controls autoplay loop>
-            &lt;source src="audio/Rap do Deidara (Naruto) - A ARTE É A EXPLOSÃO _ NERD HITS 
-            (320 kbps).mp3" type="audio/mpeg">
-            &lt;source src="audio/Rap do Deidara (Naruto) - A ARTE É A EXPLOSÃO _ NERD HITS 
-            (320 kbps).ogg" type="audio/ogg">
-            &lt;source src="audio/Rap do Deidara (Naruto) - A ARTE É A EXPLOSÃO _ NERD HITS 
-            (320 kbps).mp3" type="audio/wav">
-            &lt;p>caso não apareça o player baixe aqui &lt;a href="audio/Rap do Deidara (Naruto) - A 
-            ARTE É A EXPLOSÃO _ NERD HITS 
-            (320 kbps).zip" download="Rap do Deidara (Naruto) - A 
-            ARTE É A EXPLOSÃO _ NERD HITS (320 kbps).mp3" type="application/zip">Deidara
-            &lt;/a>&lt;/p>
-            &lt;/audio>
-            </pre>
+<pre>
+&lt;audio preload="metadata" controls autoplay loop>
+
+&lt;source src="audio/Rap do Deidara (Naruto) -
+ A ARTE É A EXPLOSÃO _ NERD HITS 
+(320 kbps).mp3" type="audio/mpeg">
+
+&lt;source src="audio/Rap do Deidara (Naruto) -
+ A ARTE É A EXPLOSÃO _ NERD HITS 
+(320 kbps).ogg" type="audio/ogg">
+
+&lt;source src="audio/Rap do Deidara (Naruto) -
+ A ARTE É A EXPLOSÃO _ NERD HITS 
+(320 kbps).mp3" type="audio/wav">
+
+&lt;p>caso não apareça o player baixe aqui &lt;a href="audio/
+Rap do Deidara (Naruto) - A 
+ARTE É A EXPLOSÃO _ NERD HITS 
+(320 kbps).zip" download="Rap do Deidara (Naruto) - A 
+ARTE É A EXPLOSÃO _ NERD HITS (320 kbps).mp3"-
+-type="application/zip">Deidara
+&lt;/a>&lt;/p>
+
+&lt;/audio>
+
+</pre>
             <audio preload="metadata" controls autoplay loop>
              <source src="audio/Rap do Deidara (Naruto) - A ARTE É A EXPLOSÃO _ NERD HITS (320 kbps).mp3" type="audio/mpeg">
              <source src="audio/Rap do Deidara (Naruto) - A ARTE É A EXPLOSÃO _ NERD HITS (320 kbps).ogg" type="audio/ogg">
@@ -238,9 +250,11 @@
             <hr>
             <h2>videos</h2>
             <p>cmd = video</p>
-            <video src="video/RL.mp4" width="500" controls></video> <!--simplificado (n recomendado)-->
-            <div.video>
-                <video width="500" poster="imagens/download.PNG" controls>
+            
+                <video class="vsimples" src="video/RL.mp4" width="70%" height="315px" controls></video>
+             <!--simplificado (n recomendado)-->
+            <div class="video">
+                <video width="70%" height="315px" poster="imagens/download.PNG" controls>
                     <source src="video/RL.webm.webm" type="video/webm">
                     <source src="video/RL.mp4" type="video/mp4">
                     <!--formatos de outros video--> <!--m4v ogv = ogg-->
@@ -248,9 +262,14 @@
                 </video>
             </div>
             <pre>
-            &lt;video width="500" poster="imagens/download.PNG" controls>
-            &lt;source src="video/RL.webm.webm" type="video/webm">
+            &lt;video width="500" poster="imagens/download.PNG"-
+            -controls>
+
+            &lt;source src="video/RL.webm.webm" type="video/-
+            -webm">
+
             &lt;source src="video/RL.mp4" type="video/mp4"><!--formatos de outros video--> <!--m4v ogv = ogg-->
+            
             &lt;p>seu navegador não é compativel com esse video&lt;/p>
             </video>
             </pre>
