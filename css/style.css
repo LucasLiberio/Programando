@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   font-family: Arial, Helvetica, sans-serif;
+    /*
+    shorthand:
+
+    font: weight size family
+
+    shadow: posição lateral (%) Posição para baixo (%) dispersamento (%) cor
+
+    border: width style color
+
+    padding: top right back left (coloca so uma vez quando for tudas a mesma medida) (colocar dois valores significa que o primeiro valor vai para cima e baixo e o segundo para direita e esquerda)
+
+    mardin: top right(auto) back left(auto) | (auto)= para centralizar
+
+    outline: width style color
+
+    */
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1:#1742FA;
+    --cor2:#1470DE;
+    --cor3:#23B9F5;
+    --cor4:#14DADE;
+    --cor5:#17FABF;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+body {
+    /*
+    Medidas Absolutas
+    cm, mm, in (polegada), px, pt (ponto), pc (paica)
+
+    Medidas Relativas
+    em (altura M da fonte), ex (altura X da fonte), rem (altura rute), vw (view width), vh (altura da view port), % 
+    */
+    font-family:var(--fonte-destaque);
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, #1742FA, #1470DE, #23B9F5, #14DADE, #17FABF);
+}
+
+img {
+    min-width: none;
+    max-width: 1000px;
+    margin-bottom: 10px;
+}
+
+picture {
+    display: block;
+    margin-bottom: 10px;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.308);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3t1);
+    color: var(--cor5)
+}
+
+main {
+    border-radius: 0px 0px 10px 10px;
+    background-image: linear-gradient(to right, #e8daff7c,#e0dcff80);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
+    /* --------------------------------------------------------------------------------------------------------- */
+    padding: 10px 20px 20px 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+main img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+main img.pequena {
+    margin: auto;
+    display: block;
+    max-width: 350px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+
+}
+
+main > p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.308);
+}
+
+aside > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor3);
+    padding: 2px 6px;
+}
+
+aside ul li {
+    margin-bottom: 5px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    margin-bottom: 10px;
+}
+
+aside.unicacoluna > ul{
+    list-style-position: inside;
+    columns: 1;
+    margin-bottom: 10px;
+}
+
+aside ol li {
+    margin-bottom: 5px;
+}
+
+aside > ol {
+    list-style-position: inside;
+    columns: 2;
+    margin-bottom: 10px;
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+aside h4 {
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h1 {
+    color: #00198a;
+    text-align: center;
+    text-shadow: 7px 7px 13px rgba(0, 0, 0, 0.212);
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.295);
+    margin-bottom: 10px;
+}
+
+h3 {
+
+    margin-bottom: 10px;
+}
+
+pre {
+    text-align: justify;
+}
+
+p {
+    text-indent: 15px;
+    margin-bottom: 10px;
+}
+
+ul > li > ul {
+    display: inline-block;
+    margin: 5px;
+}
+
+a:hover {
+    color: #1742FA;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #1470DE;
+    background-color: #00198a;
+    text-decoration: none;
+}
+
+a.externo::after {
+    content: '\1F517';
+}
+
+div {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.589);
+}
+
+div#d1 {
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div#d2 {
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div#d3 {
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div:hover {
+    background-color: #1470DE;
+}
+
+.ex1 {
+    text-align: left;
+    background-color: #146fde00;
+}
+
+.ex1:hover {
+    background-color: #146fde00;
+    color: #1470DE;
+}
+
+.ex1 > p {
+    display: none;
+}
+
+.ex1:hover > p {
+    color: aliceblue;
+    background-color: #146fde54;
+    display: block;
+    width: 233px;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer p {
+    margin-bottom: 0px;
+}
+
+footer p a {
+    color: rgb(214, 255, 216);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
