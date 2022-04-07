@@ -50,11 +50,19 @@ body {
 
 img {
     min-width: none;
-    max-width: 1000px;
+    max-width: 500px;
     margin-bottom: 10px;
 }
 
+div.sc {
+    min-width: none;
+    max-width: 450px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
 picture {
+    width: 40%;
     display: block;
     margin-bottom: 10px;
 }
