@@ -45,7 +45,7 @@ body {
     */
     font-family:var(--fonte-destaque);
     background-attachment: fixed;
-    background-image: linear-gradient(45deg, #1742FA, #1470DE, #23B9F5, #14DADE, #17FABF);
+    background-image: linear-gradient(45deg, #000000, #183558, #164f66, #095b5c, #000000);
 }
 
 img {
@@ -82,7 +82,7 @@ p.fotomy {
 }
 
 div.video {
-    background-color: var(--cor5);
+    background-color: #000000a8;
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 59%;
@@ -98,7 +98,7 @@ div.video > video {
 }
 
 video.vsimples {
-    background-color: var(--cor5);
+    background-color: #000000b8;
     margin: 0px -20px 30px -20px;
     padding: none;
     padding-bottom: none;
@@ -114,7 +114,7 @@ video.vsimples > video {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    background-color: #b1b1b17d;
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
@@ -141,13 +141,13 @@ header > p {
 }
 
 nav {
-    background-color: var(--cor5);
+    background-color: #b1b1b17d;
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
 }
 
 nav > a {
-    background-color: var(--cor4);
+    background-color: #316d8d;
     color: rgb(255, 255, 255);
     padding: 10px;
     text-decoration: none;
@@ -157,7 +157,7 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: var(--cor2);
+    background-color: #061e3a6e;
     color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 17px;
@@ -170,8 +170,8 @@ nav > a:active {
 
 main {
     border-radius: 0px 0px 10px 10px;
-    background-image: linear-gradient(to right, #e8daff7c,#e0dcff80);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
+    background-color: #93939347;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.384);
     /* --------------------------------------------------------------------------------------------------------- */
     padding: 10px 20px 20px 20px;
     min-width: 300px;
@@ -204,7 +204,7 @@ main h2 {
     color: var(--cor4);
     font-size: 1.3em;
     font-weight: normal;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
+    background-image: linear-gradient(to right, #172350ad, transparent);
     text-indent: 8px;
 
 }
@@ -226,8 +226,9 @@ main a {
     text-decoration: none;
     font-weight: bold;
     color: var(--cor5);
-    background-color: var(--cor1);
-    padding: 2px 6px;
+    background-color: #14111199;
+    padding: 4px 6px;
+    border-radius: 9px;
 }
 
 main a:hover {
@@ -236,7 +237,7 @@ main a:hover {
 }
 
 aside {
-    background-color: var(--cor1);
+    background-color: #565d6e80;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -278,7 +279,7 @@ aside > ol {
 }
 
 aside h3 {
-    background-color: var(--cor4);
+    background-color: #303030;
     color: white;
     padding: 10px;
     margin: -10px -10px 0px -10px;
@@ -288,7 +289,7 @@ aside h3 {
 }
 
 aside h4 {
-    background-color: var(--cor2);
+    background-color: #1b283a;
     color: white;
     padding: 10px;
     margin-bottom: 10px;
@@ -395,7 +396,7 @@ div.id:hover {
 }
 
 footer {
-    background-color: var(--cor5);
+    background-image: linear-gradient(to right, #7c7c7c, black);
     color: white;
     text-align: center;
     font-size: 0.8em;
@@ -406,7 +407,7 @@ footer p {
     margin-bottom: 0px;
 }
 
-footer p a {
+footer a {
     color: rgb(214, 255, 216);
     font-weight: bolder;
     text-decoration: none;
