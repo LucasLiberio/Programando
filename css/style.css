@@ -62,7 +62,12 @@ picture {
 div.fotomy {
     width: 150px;
     display: inline-block;
-    right: 70%;
+}
+
+div.disc {
+    height: 150px;
+    width: 350px;
+    display: inline-block;
 }
 
 div.img-qr {
