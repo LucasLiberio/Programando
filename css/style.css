@@ -60,6 +60,7 @@ picture {
 }
 
 div.fotomy {
+    
     width: 150px;
     display: inline-block;
 }
@@ -71,8 +72,13 @@ div.disc {
 }
 
 div.img-qr {
+    margin-right: 69.5%;
     width: 150px;
     display: inline-block;
+}
+
+p.fotomy {
+    text-align-last: right;
 }
 
 div.video {
