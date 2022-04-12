@@ -45,7 +45,7 @@ body {
     */
     font-family:var(--fonte-destaque);
     background-attachment: fixed;
-    background-image: linear-gradient(45deg, #000000, #183558, #164f66, #095b5c, #000000);
+    background-image: url('../imagens/wallpaper.jpg')
 }
 
 img {
@@ -122,7 +122,7 @@ video.vsimples > video {
 }
 
 header {
-    background-color: #b1b1b17d;
+    background-color: #b1b1b1d8;
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
@@ -149,7 +149,7 @@ header > p {
 }
 
 nav {
-    background-color: #b1b1b17d;
+    background-color: #b1b1b1d8;
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
 }
@@ -178,7 +178,7 @@ nav > a:active {
 
 main {
     border-radius: 0px 0px 10px 10px;
-    background-color: #93939347;
+    background-color: #939393a4;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.384);
     /* --------------------------------------------------------------------------------------------------------- */
     padding: 10px 20px 20px 20px;
