@@ -45,7 +45,10 @@ body {
     */
     font-family:var(--fonte-destaque);
     background-attachment: fixed;
-    background-image: url('../imagens/wallpaper.jpg')
+    background-image: url('../imagens/wallpaper.jpg');
+    background-size: 100%;
+    background-position: center center;
+    height: 97vh;
 }
 
 img {
@@ -122,7 +125,7 @@ video.vsimples > video {
 }
 
 header {
-    background-color: #b1b1b1d8;
+    background-color: #b1b1b1e3;
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
@@ -178,7 +181,7 @@ nav > a:active {
 
 main {
     border-radius: 0px 0px 10px 10px;
-    background-color: #939393a4;
+    background-color: #939393b6;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.384);
     /* --------------------------------------------------------------------------------------------------------- */
     padding: 10px 20px 20px 20px;
@@ -245,7 +248,7 @@ main a:hover {
 }
 
 aside {
-    background-color: #565d6e80;
+    background-color: #565d6ed0;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -274,6 +277,11 @@ aside.unicacoluna > ul{
     list-style-position: inside;
     columns: 1;
     margin-bottom: 10px;
+}
+
+img.ocupalinha {
+   display: block;
+   columns: 1;
 }
 
 aside ol li {
