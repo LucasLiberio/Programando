@@ -129,6 +129,10 @@ video.vsimples > video {
 }
 
 header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../imagens/fundo-preto-background114-1024x640.png');
     background-color: #b1b1b1e3;
     min-height: 150px;
     text-align: center;
@@ -155,13 +159,20 @@ header > p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.308);
 }
 
+#headerblack {
+    color: black;
+    text-shadow: 2px 2px 0px gray;
+}
+
 nav {
-    background-color: #b1b1b1e3;
+    background-color: black;
     padding: 15px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
 }
 
 nav > a {
+    
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
     background-color: #316d8d;
     color: rgb(255, 255, 255);
     padding: 10px;
@@ -172,13 +183,17 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: #061e3a6e;
+    box-shadow: 0px 0px 4px white;
+    text-shadow: 2px 2px 3px #b1b1b1e3;
+    background-color: #053c7c8e;
     color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 17px;
 }
 
 nav > a:active {
+    box-shadow: 0px 0px 4px white;
+    background-color: #1168cc8e;
     border-radius: 10px;
     color: rgb(255, 255, 255);
 }
