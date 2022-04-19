@@ -45,10 +45,12 @@ body {
     */
     font-family:var(--fonte-destaque);
     background-attachment: fixed;
+    background-color: rgb(73, 73, 73);
     background-image: url('../imagens/wallpaper.jpg');
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
-    height: 97vh;
+    height: 100vh;
 }
 
 img {
@@ -70,11 +72,7 @@ picture {
     margin-bottom: 10px;
 }
 
-div.fotomy {
-    
-    width: 150px;
-    display: inline-block;
-}
+
 
 div.disc {
     height: 150px;
@@ -82,14 +80,20 @@ div.disc {
     display: inline-block;
 }
 
-div.img-qr {
-    margin-right: 69.5%;
+div.imgid {
+    display: block;
+}
+
+img.qr {
     width: 150px;
     display: inline-block;
 }
 
-p.fotomy {
-    text-align-last: right;
+
+img.fotomy {
+    margin-left: 69.5%;
+    width: 150px;
+    display: inline-block;
 }
 
 div.video {
@@ -152,8 +156,8 @@ header > p {
 }
 
 nav {
-    background-color: #b1b1b1d8;
-    padding: 10px;
+    background-color: #b1b1b1e3;
+    padding: 15px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
 }
 
@@ -245,6 +249,10 @@ main a {
 main a:hover {
     text-decoration: underline;
     color: var(--cor4);
+}
+
+main div.fotomy {
+    position: right;
 }
 
 aside {
