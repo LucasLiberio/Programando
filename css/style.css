@@ -15,9 +15,11 @@
 
     padding: top right back left (coloca so uma vez quando for tudas a mesma medida) (colocar dois valores significa que o primeiro valor vai para cima e baixo e o segundo para direita e esquerda)
 
-    mardin: top right(auto) back left(auto) | (auto)= para centralizar
+    margin: top right(auto) back left(auto) | (auto)= para centralizar
 
     outline: width style color
+
+    background: color image position repeat size (não esta sendo identificado) attachment
 
     */
     margin: 0px;
@@ -44,12 +46,8 @@ body {
     em (altura M da fonte), ex (altura X da fonte), rem (altura rute), vw (view width), vh (altura da view port), % 
     */
     font-family:var(--fonte-destaque);
-    background-attachment: fixed;
-    background-color: rgb(73, 73, 73);
-    background-image: url('../imagens/wallpaper.jpg');
-    background-repeat: no-repeat;
+    background: rgb(73, 73, 73) url('../imagens/wallpaper.jpg') center center no-repeat fixed;
     background-size: cover;
-    background-position: center center;
     height: 100vh;
 }
 
