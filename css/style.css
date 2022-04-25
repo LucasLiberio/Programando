@@ -78,22 +78,6 @@ div.disc {
     display: inline-block;
 }
 
-div.imgid {
-    display: block;
-}
-
-img.qr {
-    width: 150px;
-    display: inline-block;
-}
-
-
-img.fotomy {
-    
-    width: 150px;
-    display: inline-block;
-}
-
 div.video {
     background-color: #000000a8;
     margin: 0px -20px 30px -20px;
@@ -266,6 +250,37 @@ main a:hover {
 
 main div.fotomy {
     position: right;
+}
+
+#meuids {
+    position: relative;
+
+
+    height: 170px;
+
+    
+}
+
+#qrcode1 {
+    background-image: url('../imagens/frame.png');
+    background-size: 100% 100%;
+
+    position: absolute; top: 10px; left: 10px;
+
+    height: 150px;
+    width: 150px;
+}
+
+#myfoto {
+    background-image: url('../imagens/perfils.jpg');
+    background-size: 100% 100%;
+    
+
+    position: absolute; top: 10px; right: 10px;
+    transform: translateX(-);
+
+    height: 150px;
+    width: 150px;
 }
 
 aside {

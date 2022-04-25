@@ -78,10 +78,33 @@ nav > a:active {
     border-radius: 10px;
     color: rgb(255, 255, 255);
 }
+
+#container {
+    background-image: url('../ex022/imgs-ex022/target001.png');
+    background-size: 100% 100%;
+
+    position: relative;
+    height: 96vh;
+    background-color: yellow;
+    padding: 10px;
+}
+
+#conteudo {
+    background-image: url('../ex022/imgs-ex022/target001.png');
+    background-size: 100% 100%;
+
+    position: absolute;
+    height: 200px;
+    background-color: purple;
+    width: 400px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
     </style>
 </head>
-
-
 
 <body>
 
@@ -101,6 +124,15 @@ nav > a:active {
         </div>
         <div class="quadrado" id="q3">
         </div>
+        
+        <h2>alinhamento vertical</h2>
+
+        <section id="container">
+            <article id="conteudo">
+
+            </article>
+        </section>
+
     </main>
 
 </body>
