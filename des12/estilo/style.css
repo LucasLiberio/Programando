@@ -53,6 +53,44 @@ header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
+nav {
+    background-color: black;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
+}
+
+nav > a {
+    
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
+    background-color: #316d8d;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+}
+
+nav > a:hover {
+    box-shadow: 0px 0px 4px white;
+    text-shadow: 2px 2px 3px #b1b1b1e3;
+    background-color: #053c7c8e;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 17px;
+}
+
+nav > a:active {
+    box-shadow: 0px 0px 4px white;
+    background-color: #1168cc8e;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
 section {
 padding-top: 10vh;
 padding-bottom: 10vh;
@@ -60,6 +98,10 @@ line-height: 2em;
 padding-left: 30px;
 font-family: var(--f3);
 font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -70,12 +112,28 @@ section.normal {
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
+    background-image: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.342);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    
 }
 
 footer {
