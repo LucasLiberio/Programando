@@ -114,6 +114,8 @@ video.vsimples > video {
     height: 90%;
 }
 
+/* -------------------------------------header------------------------------------ */
+
 header {
     background: rgb(102, 100, 100) url('../imagens/fundo-preto-background114-1024x640.png') center center no-repeat fixed;
     background-size: cover;
@@ -147,6 +149,8 @@ header > p {
     color: black;
     text-shadow: 2px 2px 0px gray;
 }
+
+/* ----------------------------------NAV--------------------------------------------- */
 
 nav {
     background-color: black;
@@ -230,6 +234,8 @@ a.menua:active {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
+
+
 nav > a {
     
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
@@ -260,11 +266,13 @@ nav > a:active {
     color: rgb(255, 255, 255);
 }
 
+/* -----------------------------Main--------------------------------------- */
+
 main {
     border-radius: 0px 0px 10px 10px;
     background-color: #939393b6;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.384);
-    /* --------------------------------------------------------------------------------------------------------- */
+    /* ------------------------------------------------ */
     padding: 10px 20px 20px 20px;
     min-width: 300px;
     max-width: 1000px;
@@ -328,11 +336,7 @@ main a:hover {
     text-decoration: underline;
     color: var(--cor4);
 }
-
-main div.fotomy {
-    position: right;
-}
-
+/* -------------------------IDs----------------------- */
 #meuids {
     position: relative;
 
@@ -363,6 +367,8 @@ main div.fotomy {
     height: 150px;
     width: 150px;
 }
+
+/* --------------------------------Aside------------------------------- */
 
 aside {
     background-color: #565d6ed0;
@@ -429,6 +435,8 @@ aside h4 {
     border-radius: 10px 10px 0px 0px;
 }
 
+/* ------------------------------------Html----------------------------------- */
+
 h1 {
     color: #00198a;
     text-align: center;
@@ -474,7 +482,7 @@ a:hover {
 a:active {
     color: #1470DE;
     background-color: #00198a;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a.externo::after {
@@ -527,6 +535,21 @@ div.id:hover {
     border-radius: 10px;
     padding: 5px;
 }
+
+/* ----------------------Tabela------------------------- */
+
+table {
+    width: 400px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+/* --------------------------Roda-pé------------------------- */
 
 footer {
     background-color: black;
