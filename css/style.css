@@ -550,6 +550,11 @@ td {
     vertical-align: middle; /*alinhamaneto vertical */
 }
 
+/* para tabelas grandes ultilizar
+caption
+thead
+tbody
+tfoot */
 
 /* --------------------------Roda-pé------------------------- */
 
