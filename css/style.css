@@ -539,8 +539,38 @@ div.id:hover {
 /* ----------------------Tabela------------------------- */
 
 table {
-    width: 400px;
+    width: 100%;
     border-collapse: collapse;
+    position: relative;
+
+}
+
+thead {
+    
+}
+
+thead > tr > th {
+    position: sticky;
+    top: 0;
+    background-color: rgb(65, 65, 65);
+}
+
+tbody {
+    background-color: rgb(158, 158, 158);
+}
+
+tbody > tr:nth-child(2n) {
+    background-color: rgb(114, 114, 114);
+}
+
+tfoot {
+    background-color: rgb(65, 65, 65);
+}
+
+th {
+    border: 1px solid black;
+    padding: 8px;
+    background-color: rgb(65, 65, 65);
 }
 
 td {
@@ -561,6 +591,20 @@ tfoot */
 tbody > tr:nth-child(even/2n=par,odd/2n-1=impar,) {
     background-color: lightgray;
 }
+*/
+
+/* Cabeçalho fixo 
+
+table {
+    position: relative;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: 0;
+    background-color: o mesmo do thead;
+}
+
 */
 
 /* --------------------------Roda-pé------------------------- */
