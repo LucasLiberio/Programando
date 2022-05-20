@@ -556,6 +556,13 @@ thead
 tbody
 tfoot */
 
+/* Efeito zebrado 
+
+tbody > tr:nth-child(even/2n=par,odd/2n-1=impar,) {
+    background-color: lightgray;
+}
+*/
+
 /* --------------------------Roda-pé------------------------- */
 
 footer {
