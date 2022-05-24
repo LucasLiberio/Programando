@@ -607,6 +607,17 @@ thead > tr > th {
 
 */
 
+/*
+Mesclagem de Células
+
+ocupar colunas
+<td colspan="quantidade de culanas para ocupar">item q ocupe a parte vazia</td>
+
+ocupar linhas
+<td rowspan="quantidade de linhas para ocupar">...</td>
+
+*/
+
 /* --------------------------Roda-pé------------------------- */
 
 footer {
