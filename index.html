@@ -436,6 +436,13 @@
                     <ul>
                         <li>
                             Table = tabela
+                            <ol>
+                                <li>caption</li>
+                                <li>colgroup <ul><li>col</li></ul></li> = serve para seleçao de uma coluna inteira atraves de class atraves do col| cmd span funciona como expançao de coluna
+                                <li>thead <ul><li>tr<ul><li>th</li></ul></li></ul> </li>
+                                <li>tbody <ul><li>tr<ul><li>td</li></ul></li></ul> </li>
+                                <li>tfoot <ul><li>tr<ul><li>th</li></ul></li></ul> </li>
+                            </ol>
 
                             <ul>
                                 <li>
@@ -444,21 +451,31 @@
 
                                         <li>
                                              legenda/ titulo = caption
-                                        </li>
+                                        </li> <br>
 
                                         <li>
-                                            table header = cabeçalho de tabela = th <br>
-                                            cmd scope="col"
-                                        </li>
+                                            table header = cabeçalho de tabela = th
+                                        </li> <br>
+                                            <ol>
+                                                <li>cmd scope="col" representa q esse titulo é pra coluna onde ele esta</li> <br>
+                                                <li>cmd scope="colgroup" esse titulo é para o grupo de colunas q ele esta representando</li>
+                                            </ol>
+                                         <br>
 
                                         <li>
                                             table data = dado de tabela = td
                                         </li>
+                                            <ol>
+                                                <li>*cmd colspan = expasao de coluna 'na mesma linha'</li> <br>
+                                                <li>*cmd rowspan = expasao de linha 'na mesma coluna'</li>
+                                            </ol>
+                                         <br>
 
                                         <li>
-                                            titulo na tbela = th <br>
-                                            cmd scope="row"
-                                        </li>
+                                            titulo na tabela = th <br>
+                                            cmd scope="row" representa q esse titulo é para a linha q ele esta <br>
+                                            cmd scope="rowgroup" esse titulo é para o grupo de linhas q ele esta representando
+                                        </li> <br>
 
                                     </ul>
                                 </li>
@@ -469,74 +486,71 @@
                     </ul>
             </aside>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Coluna 1
-                        </th>
-
-                        <th>
-                            Coluna 2
-                        </th>
-
-                        <th>
-                            Coluna 3
-                        </th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr> <!-- Primeira linha -->
-                        <td>
-                            A1
-                        </td>
-                        <td>
-                            B1
-                        </td>
-                        <td>
-                            C1
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            A2
-                        </td>
-                        <td>
-                            B2
-                        </td>
-                        <td>
-                            C2
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>A3</td>
-                        <td>B3</td>
-                        <td>C3</td>
-                    </tr>
-                    <tr>
-                        <td>A4</td>
-                        <td>B4</td>
-                        <td>C4</td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-                    <tr>
-                        <th>
-                            total:
-                        </th>
-
-                        <td>
-                            numero
-                        </td>
-
-                        <td>
-                            numero
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="table">
+                <table>
+                    <caption>caption = titulo / legenda</caption>
+                    <thead>
+                        <tr>
+                            <th>
+                                Coluna 1
+                            </th>
+                            <th>
+                                Coluna 2
+                            </th>
+                            <th>
+                                Coluna 3
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> <!-- Primeira linha -->
+                            <td>
+                                A1
+                            </td>
+                            <td>
+                                B1
+                            </td>
+                            <td>
+                                C1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A2
+                            </td>
+                            <td>
+                                B2
+                            </td>
+                            <td>
+                                C2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>A3</td>
+                            <td>B3</td>
+                            <td>C3</td>
+                        </tr>
+                        <tr>
+                            <td>A4</td>
+                            <td>B4</td>
+                            <td>C4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>
+                                total:
+                            </th>
+                            <td>
+                                numero
+                            </td>
+                            <td>
+                                numero
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
 
         </article>
     </main>

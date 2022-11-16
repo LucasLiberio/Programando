@@ -161,7 +161,7 @@ nav {
     background-attachment: fixed;
     padding: 15px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
-
+    text-align: center;
 }
 nav > div#menu {
     display: inline-block;
@@ -578,6 +578,10 @@ td {
     padding: 8px;
     text-align: center; /* alinhamento horizontal */
     vertical-align: middle; /*alinhamaneto vertical */
+}
+
+div.table {
+    overflow-x: auto;
 }
 
 /* para tabelas grandes ultilizar
