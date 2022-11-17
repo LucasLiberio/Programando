@@ -70,14 +70,6 @@ picture {
     margin-bottom: 10px;
 }
 
-
-
-div.disc {
-    height: 150px;
-    width: 350px;
-    display: inline-block;
-}
-
 div.video {
     background-color: #000000a8;
     margin: 0px -10px 30px -20px;
@@ -307,6 +299,8 @@ main h2 {
     font-weight: normal;
     background-image: linear-gradient(to right, #172350ad, transparent);
     text-indent: 8px;
+    margin: -10px -10px 5px -10px;
+    border-radius: 10px 10px 0px 0px;
 
 }
 
@@ -431,8 +425,10 @@ aside h4 {
     background-color: #1b283a;
     color: white;
     padding: 10px;
+    margin: -10px -10px 0px -10px;
     margin-bottom: 10px;
     border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px -3px 5px rgb(0 0 0 / 40%)
 }
 
 /* ------------------------------------Html----------------------------------- */

@@ -114,7 +114,6 @@
                             --fonte-nome: nome da fonte;
                         </li>
             </ul>
-                }
             
             <h4> main h1(h2,h3,p ou qualquer outro para funciona fontes e talz)</h4>
             <p>
@@ -488,8 +487,9 @@
         </aside>
         <hr>
         <article>
-            <h2>Representações de cores</h2>
             <aside>
+            <h2>Representações de cores</h2>
+            
                 <div class="sc"> <img width="600px" src="imagens/unknown.png" alt="representação de cores"> </div>
                 <div class="sc"> <img width="300px" src="imagens/1.png" alt="1"> </div>
                 <div class="sc"> <img width="300px" src="imagens/2.png" alt="2"> </div>
@@ -506,6 +506,7 @@
                 <div class="sc"> <img width="300px" src="imagens/13.png" alt="13"> </div>
             </aside>  
             
+            <aside>
             <h2>Trabalhando com fontes</h2>
             <div class="sc"> <img width="300px" src="imagens/F1.png" alt="f1"> </div>
             <div class="sc"> <img width="300px" src="imagens/F2.png" alt="f2"> </div>
@@ -517,19 +518,28 @@
             <div class="sc"> <img width="300px" src="imagens/F8.png" alt="f8"> </div>
             <p>font-family: 1ª fonte a testar, 2ª fonte a testar (se não funcionar a pimeira), 3ª fonte generica <!--recomendado pegar no site css web safe fonte family--> </p>
             <img width="300px" src="imagens/Fo1.png" alt="fo1">
-            <h2>Fontes</h2>
-            <h3>Google Fonts</h3>
-            <p class="pre">@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital, wght@0,100;0,200;0,300;0,400;0,500; 0,600;0,700;0,800;0,900;- 1,100;1,200;1,300;1,400;1,500;1,600; 1,700;1,800;1,900&display=swap');</p>
-            <p>font-family: 'Work Sans', sans-serif;</p>
-            <h2>
-                identificação
-            </h2>
-            <p>
-                (HTML) &lt;H1 id="nome"> &lt;/h1> = (css) H1#nome {} [id=#] <!--Nâo pode ultilizar o mesmo id mais de uma vez-->
-            </p>
-            <p>
-                (HTML) &lt;H1 class="nome"> &lt;/h1> = (css) .nome {} [class=.] <!--pode ultilizar o mesmo class mais de uma vez e pode adicionar mais de um class--> <!--class vem antes do id-->
-            </p>
+            </aside> 
+
+            <aside class="normal">
+                <h2>Fontes</h2>
+                <h5>Google Fonts</h5>
+                <p class="pre">@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital, wght@0,100;0,200;0,300;0,400;0,500; 0,600;0,700;0,800;0,900;- 1,100;1,200;1,300;1,400;1,500;1,600; 1,700;1,800;1,900&display=swap');</p>
+                <p>font-family: 'Work Sans', sans-serif;</p>
+                
+            </aside>
+
+            <aside>
+                <h2>
+                    identificação
+                </h2>
+                <p>
+                    (HTML) &lt;H1 id="nome"> &lt;/h1> = (css) H1#nome {} [id=#] <!--Nâo pode ultilizar o mesmo id mais de uma vez-->
+                </p>
+                <p>
+                    (HTML) &lt;H1 class="nome"> &lt;/h1> = (css) .nome {} [class=.] <!--pode ultilizar o mesmo class mais de uma vez e pode adicionar mais de um class--> <!--class vem antes do id-->
+                </p>
+            </aside>
+            
             <hr>
             <p>
                 <div id="titulo-div">div ocupa toda linha (sem alteração)</div>
@@ -542,8 +552,10 @@
                 </div>
                 <div class="id">
                     03
-                </div>
+                </div>      
         </article>
+        
+
         <aside class="unicacoluna">
             <p>
                 (div) := pseudo class
