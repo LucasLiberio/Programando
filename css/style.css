@@ -386,7 +386,7 @@ aside ul li {
 
 aside > ul {
     list-style-position: inside;
-    columns: 2;
+    columns: 1;
     margin-bottom: 10px;
 }
 
