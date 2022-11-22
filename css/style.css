@@ -114,6 +114,110 @@ iframe#iframehtml {
     box-shadow:black 0px 0px 10px;
 }
 
+aside.amostra > div#menu {
+    display: inline-block;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
+    background-color: #316d8d;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: justify;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    
+}
+
+aside.amostra > div#menu:hover {
+    box-shadow: 0px 0px 4px white;
+    background-color: #053c7c00;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px transparent;
+    transition-duration: 1s;
+    padding: 0px;
+}
+
+
+aside.amostra > p.menup > a {
+    display: none;
+}
+
+aside.amostra:hover > p.menup > a.menua {
+    display: inline-block;
+    
+}
+
+a.botão {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
+    background-color: #316d8d;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: justify;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+    margin-bottom: 5px;
+}
+
+a.botão:hover {
+    box-shadow: 0px 0px 4px white;
+    text-shadow: 2px 2px 3px #b1b1b1e3;
+    background-color: #053c7c8e;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 17px;
+}
+
+a.botão:active {
+    box-shadow: 0px 0px 4px white;
+    background-color: #1168cc8e;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.botão {
+    text-indent: 0px;
+    margin-bottom: 0px;
+    background-color: #565d6e00;
+    padding: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+
+
+aside.amostra > a {
+    
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
+    background-color: #316d8d;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: justify;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+
+}
+
+aside.amostra > a:hover {
+    box-shadow: 0px 0px 4px white;
+    text-shadow: 2px 2px 3px #b1b1b1e3;
+    background-color: #053c7c8e;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 17px;
+}
+
+aside.amostra > a:active {
+    box-shadow: 0px 0px 4px white;
+    background-color: #1168cc8e;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
 /* -------------------------------------header------------------------------------ */
 
 header {
