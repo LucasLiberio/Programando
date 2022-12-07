@@ -646,6 +646,11 @@ div.id:hover {
     padding: 5px;
 }
 
+.ocupalinha {
+    background-color: rgba(211, 211, 211, 0.459);
+    padding: 5px;
+}
+
 /* ----------------------Tabela------------------------- */
 
 table {
@@ -727,6 +732,18 @@ ocupar linhas
 <td rowspan="quantidade de linhas para ocupar">...</td>
 
 */
+
+/* ----------------------------Section---------------------------- */
+
+section#mapsea {
+    background-color: rgb(252, 228, 186);
+    background-image: url(../imagens/Sem\ Título-1.png);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 
 /* --------------------------Roda-pé------------------------- */
 
