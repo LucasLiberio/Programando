@@ -46,7 +46,14 @@ body {
     em (altura M da fonte), ex (altura X da fonte), rem (altura rute), vw (view width), vh (altura da view port), % 
     */
     font-family:var(--fonte-destaque);
-    background: rgb(73, 73, 73) url('../imagens/wallpaper.jpg') center center no-repeat fixed;
+    background: rgb(73, 73, 73) url('../imagens/spiral\ espaço.jpg') center center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+body#css {
+    font-family:var(--fonte-destaque);
+    background: rgb(73, 73, 73) url('../imagens/espaço\ e\ terra.jpg') center center no-repeat fixed;
     background-size: cover;
     height: 100vh;
 }
@@ -259,59 +266,80 @@ header > p {
 /* ----------------------------------NAV--------------------------------------------- */
 
 nav {
-    background-color: black;
-    background-image: url('../imagens/fundo-preto-background114-1024x640.png');
+    top: auto;
+    background-color: rgba(0, 0, 0, 0.822);
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 15px;
+    padding-top: 7px;
+    padding-bottom: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
     text-align: center;
 }
-nav > div#menu {
+
+div#menu {
     display: inline-block;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
-    background-color: #316d8d;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0);
+    background-color: #0c007400;
     color: rgb(255, 255, 255);
-    padding: 10px;
-    text-align: justify;
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 20px;
-    
+    border-radius: 10px;
+    width: 54px;
+    height: 40px;
 }
 
-nav > div#menu:hover {
+div#menu:hover {
     box-shadow: 0px 0px 4px white;
-    background-color: #053c7c00;
+    background-color: #02020200;
     text-decoration: none;
     box-shadow: 0px 0px 0px transparent;
-    transition-duration: 1s;
-    padding: 0px;
+    transition-duration: 0s;
+    padding: auto;
+    width: 100%;
 }
 
-
-div#menu > p.menup > a {
+section.menum {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
     display: none;
 }
 
-div#menu:hover > p.menup > a.menua {
-    display: inline-block;
+div#menu:hover > section.menum {
+    display: inline-flex;
+    top: -6px;
     
 }
 
-a.menua {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
-    background-color: #316d8d;
-    color: rgb(255, 255, 255);
+p.menup {
+    background-color: #0c0074da;
+    border-radius: 10px;
+
+    margin-bottom: 15px;
     padding: 10px;
-    text-align: justify;
+    text-indent: 0px;
+    display: inline-block;
+}
+
+div#menu:hover > p.menup {
+    display: none;
+}
+
+.menua {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
+    background-color: #0000008e;
+    color: rgb(255, 255, 255);
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 20px;
     transition-duration: 0.1s;
-    margin-bottom: 5px;
+    display: inline-block;
+    width: 50px;
+    padding: 2.5%;
+    box-shadow: 0px 0px 2px white;
+    
 }
 
 a.menua:hover {
@@ -326,57 +354,22 @@ a.menua:hover {
 a.menua:active {
     box-shadow: 0px 0px 4px white;
     background-color: #1168cc8e;
-    border-radius: 10px;
+    border-radius: 30px;
     color: rgb(255, 255, 255);
 }
 
-.menup {
-    text-indent: 0px;
-    margin-bottom: 0px;
-    background-color: #565d6e00;
-    padding: 0px;
-    border-radius: 0px;
-    margin-bottom: 0px;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-}
-
-
-
-nav > a {
-    
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
-    background-color: #316d8d;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    text-align: justify;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 20px;
-    transition-duration: 0.1s;
-
-}
-
-nav > a:hover {
-    box-shadow: 0px 0px 4px white;
-    text-shadow: 2px 2px 3px #b1b1b1e3;
-    background-color: #053c7c8e;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border-radius: 17px;
-}
-
-nav > a:active {
-    box-shadow: 0px 0px 4px white;
-    background-color: #1168cc8e;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-}
 
 /* -----------------------------Main--------------------------------------- */
 
 main {
     border-radius: 0px 0px 10px 10px;
-    background-color: #939393b6;
+
+    background: rgba(0, 0, 0, 0.774) ;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    color: rgb(189, 189, 189);
+
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.384);
     /* ------------------------------------------------ */
     padding: 10px 20px 20px 20px;
@@ -479,11 +472,12 @@ main a:hover {
 /* --------------------------------Aside------------------------------- */
 
 aside {
-    background-color: #565d6ed0;
+    background-color: #29292957;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.308);
+    
 }
 
 aside > p > a {
