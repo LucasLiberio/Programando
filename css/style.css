@@ -255,6 +255,7 @@ header > p {
     margin: auto;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 5px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.308);
 }
 
@@ -276,6 +277,7 @@ nav {
     padding-bottom: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
     text-align: center;
+    height: 50px;
 }
 
 div#menu {
@@ -283,7 +285,6 @@ div#menu {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0);
     background-color: #0c007400;
     color: rgb(255, 255, 255);
-    text-align: center;
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
@@ -299,18 +300,31 @@ div#menu:hover {
     transition-duration: 0s;
     padding: auto;
     width: 100%;
+    height: auto;
+    
 }
 
 section.menum {
     background-color: rgba(0, 0, 0, 0);
-    text-align: center;
+    text-align: justify;
     display: none;
 }
 
 div#menu:hover > section.menum {
-    display: inline-flex;
-    top: -6px;
-    
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    top: px;
+}
+
+section.menum > a {
+    display: none;
+}
+
+section.menum:hover > a {
+    display: inline;
 }
 
 p.menup {
@@ -327,7 +341,9 @@ div#menu:hover > p.menup {
     display: none;
 }
 
-.menua {
+
+
+a.menua {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
     background-color: #0000008e;
     color: rgb(255, 255, 255);
@@ -336,9 +352,12 @@ div#menu:hover > p.menup {
     font-weight: bold;
     transition-duration: 0.1s;
     display: inline-block;
-    width: 50px;
-    padding: 2.5%;
+    padding: 10px;
     box-shadow: 0px 0px 2px white;
+    max-width: 50px;
+    max-height: 25px;
+    position: relative;
+    top: 4px;
     
 }
 
@@ -351,7 +370,7 @@ a.menua:hover {
     border-radius: 17px;
 }
 
-a.menua:active {
+a.menua:hover {
     box-shadow: 0px 0px 4px white;
     background-color: #1168cc8e;
     border-radius: 30px;
