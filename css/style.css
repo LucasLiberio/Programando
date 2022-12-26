@@ -316,7 +316,6 @@ div#menu:hover > section.menum {
     width: 100%;
     height: 40px;
     position: relative;
-    top: px;
 }
 
 section.menum > a {
@@ -367,10 +366,11 @@ a.menua:hover {
     background-color: #053c7c8e;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    border-radius: 17px;
+    border-radius: 10px;
+    
 }
 
-a.menua:hover {
+a.menua:active {
     box-shadow: 0px 0px 4px white;
     background-color: #1168cc8e;
     border-radius: 30px;
