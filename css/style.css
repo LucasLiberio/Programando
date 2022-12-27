@@ -37,6 +37,11 @@
     --fonte-destaque: 'Bebas Neue', cursive;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
 body {
     /*
     Medidas Absolutas
