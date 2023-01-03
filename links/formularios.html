@@ -7,6 +7,17 @@
     <link rel="shortcut icon" href="../imagens/Simbolo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <title>Formulário</title>
+    <style>
+        * {
+            
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            
+        }
+    </style>
 </head>
 <body>
 
@@ -23,19 +34,65 @@
     </nav>
 
     <main>
+        <h4>form:</h4>
+        <ul>
+            <li>
+                action | onde vai ser mandado os dados
+            </li>
+            <li>
+                autocomplete 
+                <ul>
+                    <li>
+                        off| para não preencher automatico
+                    </li>
+                    <li>
+                        on
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h4>input:</h4>
+        <ul>
+            <li>
+                text
+                <ul>
+                    <li>
+                        name
+                    </li>
+                    <li>
+                        id
+                    </li>
+                </ul>
+            </li>
+            <li>
+                submit
+                <ul>
+                    <li>
+                        value
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+
         <h2>
             formulario iniciante
         </h2>
 
-        <p>
-            nome: <input type="text" name="nome" id="nome">
-        </p>
+        <form action="cadastro.php">
+            <p>
+                <label for="inome">nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
 
-        <p>
-            sobrenome: <input type="text" name="sobrenome" id="sobrenome">
-        </p>
+            <p>
+                <label for="isobrenome">sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome">
+            </p>
 
-        <input type="submit" value="enviar">
+            <input type="submit" value="enviar">
+        </form>
     </main>
 </body>
 </html>
