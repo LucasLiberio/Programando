@@ -64,3 +64,26 @@ section#redes-sociais img:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     transition: transform .2s, border .5s;
 }
+
+section#HC {
+    display: inline-block;
+
+    position: relative;
+    transform: translate(0%, 200%);
+    left: 40%;
+    top: -1%;
+
+    background-color: rgba(0, 0, 0, 0.233);
+
+    width: 80px;
+    height: ;
+
+    text-align: center;
+}
+
+section#HC img{
+    width: 30px;
+    height: 30px;
+
+
+}
