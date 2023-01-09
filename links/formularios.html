@@ -20,6 +20,9 @@
         main {
             padding: 10px;
         }
+       main h2 {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -57,10 +60,10 @@
                 autocomplete 
                 <ul>
                     <li>
-                        off| para não preencher automatico
+                        off | para não preencher automatico
                     </li>
                     <li>
-                        on
+                        on | dica de nome que ja foi ultilizado e para autocomplete nos input
                     </li>
                 </ul>
             </li>
@@ -68,7 +71,7 @@
         <h4>input:</h4>
         <ul>
             <li>
-                text
+                text | preenchimento
                 <ul>
                     <li>
                         name
@@ -79,12 +82,49 @@
                 </ul>
             </li>
             <li>
-                submit
+                submit | enviar
                 <ul>
                     <li>
                         value
                     </li>
                 </ul>
+            </li>
+            <li>
+                password | senhas
+                <ul>
+                    <li>
+                        name
+                    </li>
+                    <li>
+                        id
+                    </li>
+                </ul>
+            </li>
+            <li>
+                reset | limpar
+                <ul>
+                    <li>
+                        value
+                    </li>
+                </ul>
+            </li>
+            <li>
+                required | obrigatorio preencher
+            </li>
+            <li>
+                minlength | minimo que precisa
+            </li>
+            <li>
+                maxlength | maximo permitido
+            </li>
+            <li>
+                size | tamanho da caixa
+            </li>
+            <li>
+                placeholder | dica dentro do espaço de preenchimento
+            </li>
+            <li>
+                autocomplete | serve para varios preenchimentsos
             </li>
         </ul>
 
@@ -106,6 +146,25 @@
             </p>
 
             <input type="submit" value="enviar">
+        </form>
+
+        <h2>
+            formulario 2
+        </h2>
+
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="iusu">Usuário</label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="nome do usuario">
+            </p>
+            <p>
+                <label for="isen">Senha:</label>
+                <input type="password" name="sen" id="isen" required placeholder="senha do usuario">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
         </form>
     </main>
 </body>
