@@ -212,7 +212,30 @@
                     </p>
                 </fieldset>
             </form>
-        
+
+        <h2>
+            Formulário 5 Esportes e Radios
+        </h2>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <fieldset>
+                    <legend>
+                        Esportes
+                    </legend>
+                    <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">Futebol</label> <br>
+                    <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label> <br>
+                    <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">Volei</label> <br>
+                    <input type="checkbox" name="games" id="igames"> <label for="igames">Games</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="imas" value="Masculino"> <label for="imas">Masculino</label> <br>
+                    <input type="radio" name="sexo" id="ifem" value="Feminino"> <label for="ifem">Feminino</label> <br>
+                    <!-- quando coloca o mesmo name em radio marca so um e desmarca o outro -->
+                </fieldset>
+            </form>
+
+
     </main>
 </body>
 </html>
