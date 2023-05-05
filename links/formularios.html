@@ -235,7 +235,32 @@
                 </fieldset>
             </form>
 
+        <h2>Formulário 6 cor, Nivel e Foto perfil</h2>
 
+        <form action="cadastro.php" method="get">
+            
+            <p>
+                <label for="icor">cor:</label>
+                <input type="color" name="cor" id="icor" value="#0c0074da">
+            </p>
+
+            <p>
+                <label for="inivel">Nível de satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="3">
+            </p>
+        </form>
+
+        <form action="cadastro.php" method="POST">
+            
+                <p>
+                    <label for="ifoto">Foto de Perfil:</label>
+                    <input type="file" name="foto" id="ifoto">
+                    <!-- para arquivos de mais de 3000bytes usa-se o post -->
+                </p>
+        </form>
+
+        
+        
     </main>
 </body>
 </html>
