@@ -259,7 +259,46 @@
                 </p>
         </form>
 
-        
+    <h2>Formulário 7 </h2>
+
+        <form action="cadastro.php" method="get" autocomplete="on">
+
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+
+                    <option value="" selected>---Escolha---</option>
+
+                    <optgroup label="Região Sudeste">
+
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+
+                    </optgroup>
+
+                </select>
+            </p>
+
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="profissão" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                </datalist>
+            </p>
+            
+        </form>
+
+        <form action="cadastro.php" method="post">
+
+            <p>
+                <label for="imsg">Mensagens:</label>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+            
+        </form>
         
     </main>
 </body>
