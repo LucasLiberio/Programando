@@ -282,7 +282,7 @@ nav {
     padding-bottom: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
     text-align: center;
-    height: 50px;
+    height: auto;
 }
 
 div#menu {
@@ -802,3 +802,6 @@ footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
 }
+
+/* ------------------Media Query----------------- */
+

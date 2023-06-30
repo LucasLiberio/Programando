@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+
+nav {
+    display: none;
+}
+
+article::after {
+    content: 'Essa pagina foi criada para aprendisazem do Media Query!!!';
+}
