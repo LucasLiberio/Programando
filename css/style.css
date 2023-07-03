@@ -803,12 +803,5 @@ footer a:hover {
     color: var(--cor1);
 }
 
-/* ------------------Media Feature----------------- */
+/* ------------------Media Query----------------- */
 
-article#mq2 {
-    margin: 0px;
-    padding: 0px;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
