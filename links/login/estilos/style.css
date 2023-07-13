@@ -20,11 +20,13 @@ main{
 }
 
 section#login{
-    background-color: aqua;
+    background-color: #00091e;
     width: 250px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.575);
+
+    color: azure;
 
     position: absolute;
     top: 50%;

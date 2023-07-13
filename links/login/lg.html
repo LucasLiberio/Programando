@@ -25,8 +25,19 @@
                     Seja Bem-vindo novamente. Faça o login para acessar sua conta.
                 </p>
 
-                <form action="login.php" method="post">
-
+                <form action="login.php" method="post" autocomplete="on">
+                    <p>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="E-mail do usuario">
+                    </p>
+                    <p>
+                        <label for="isen">Senha:</label>
+                        <input type="password" name="sen" id="isen" required placeholder="senha do usuario">
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
                 </form>
 
             </div>
