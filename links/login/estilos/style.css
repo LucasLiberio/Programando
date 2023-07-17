@@ -24,7 +24,7 @@ section#login{
     width: 250px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.575);
+    box-shadow: 0px 0px 10px #00ffff93;
 
     color: azure;
 
@@ -33,6 +33,9 @@ section#login{
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: 20px;
+
+    transition: width .1s, height .1s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
@@ -42,6 +45,7 @@ section#login > div#imagem{
     background-position: center center;
     border-top-right-radius: 19px;
     border-top-left-radius: 19px;
+    border-bottom-left-radius: 19px;
 
     height: 200px;
 }
