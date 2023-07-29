@@ -51,14 +51,14 @@ body {
     em (altura M da fonte), ex (altura X da fonte), rem (altura rute), vw (view width), vh (altura da view port), % 
     */
     font-family:var(--fonte-destaque);
-    background: rgb(73, 73, 73) url('../imagens/spiral\ espaço.jpg') center center no-repeat fixed;
+    background: rgb(0, 0, 0) url('../imagens/spiral\ espaço.jpg') center center no-repeat fixed;
     background-size: cover;
     height: 100vh;
 }
 
 body#css {
     font-family:var(--fonte-destaque);
-    background: rgb(73, 73, 73) url('../imagens/espaço\ e\ terra.jpg') center center no-repeat fixed;
+    background: rgb(0, 0, 0) url('../imagens/espaço\ e\ terra.jpg') center center no-repeat fixed;
     background-size: cover;
     height: 100vh;
 }
