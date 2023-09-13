@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>005</title>
+    <style>
+        body{
+            background-color: rgb(29, 155, 113);
+            color: aliceblue;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando estudos DOM</h1>
+
+    <p>aqui vai o resultado</p>
+
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+
+    <div id="msg">clique em mim</div>
+
+    <div id="ms">clique em mim</div>
+
+    <div name="msg1">clique em mim</div>
+
+    <div class="msg2">clique em mim</div> <br>
+
+    <script>
+        window.document.write('Olá, Mundo!'+`<br>`) 
+        window.document.write(window.document.charset +`<br>`)
+        window.document.write(window.navigator.appName +`<br>`)
+        window.document.write(window.document.URL +`<br>`)
+
+        var corpo = window.document.body
+        corpo.style.background = 'black'/*muda a cor do body*/
+
+        var p1 = window.document.getElementsByTagName('p')[0] /*quando o Element tiver no plural tem chaves para selecionar qual*/ //0 representa o primeiro a ser selecionado.
+        window.document.write('esta escrito ' + p1.innerText + `<br>`)
+        p1.style.color = 'blue' /*muda a cor do primeiro p*/
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+        document.write(p2.innerText + `<br>`)/*pega so o texto*/
+        document.write(p2.innerHTML) /* vem com a formatação em html*/
+
+        var d = window.document.getElementById('msg') 
+         /*seleciona pelo id*/
+        d.style.background = 'darkgray'
+        d.innerText = 'Estou aguardando...'
+        //window.document.getElementById('msg').innerText = 'Olá' == é o mesmo comando so q tudo junto. //id
+
+        var div1 = window.document.querySelector('div#ms')
+        div1.innerText = 'Estou aguardando...2' //seleciona a div id msg
+
+        var d2 = window.document.getElementsByName('msg1')[0]
+        d2.innerText = 'Estou aguardando...3'//name
+
+        var d3 = window.document.getElementsByClassName('msg2')[0]
+        d3.innerText = 'Estou aguardando...4'//class
+
+    </script>
+</body>
+</html>
