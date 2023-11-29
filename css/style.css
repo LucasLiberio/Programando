@@ -54,7 +54,23 @@ body {
     background: rgb(0, 0, 0) url('../imagens/spiral\ espaço.jpg') center center no-repeat fixed;
     background-size: cover;
     height: 100vh;
+
+    margin: 0;
+    height: 100vh;
+    
+    align-items: center;
+    justify-content: center;
+    background-size: 200% 200%;
+    background-image: linear-gradient(45deg, #ee7752, rgb(105, 0, 40), #00678d, #020083);
+    animation: gradient 60s ease infinite;
+    }
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
+
+
 
 body#css {
     font-family:var(--fonte-destaque);
@@ -167,7 +183,7 @@ a.botão {
     text-decoration: none;
     font-weight: bold;
     border-radius: 20px;
-    transition-duration: 0.1s;
+    transition-duration: 0.5s;
     margin-bottom: 5px;
 }
 
@@ -178,6 +194,7 @@ a.botão:hover {
     color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 17px;
+    transition-duration: 0.5s;
 }
 
 a.botão:active {
@@ -202,29 +219,30 @@ a.botão:active {
 aside.amostra > a {
     
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
-    background-color: #316d8d;
+    background-color: #0c0074da;
     color: rgb(255, 255, 255);
     padding: 10px;
     text-align: justify;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 20px;
-    transition-duration: 0.1s;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    margin-right: 7px;
 
 }
 
 aside.amostra > a:hover {
     box-shadow: 0px 0px 4px white;
     text-shadow: 2px 2px 3px #b1b1b1e3;
-    background-color: #053c7c8e;
-    color: rgb(0, 0, 0);
+    background-color: #0000008e;
+    color: rgb(163, 163, 163);
     text-decoration: none;
     border-radius: 17px;
 }
 
 aside.amostra > a:active {
     box-shadow: 0px 0px 4px white;
-    background-color: #1168cc8e;
+    background-color: #111dcc8e;
     border-radius: 10px;
     color: rgb(255, 255, 255);
 }
@@ -235,12 +253,12 @@ aside.amostra > a:active {
 /* -------------------------------------header------------------------------------ */
 
 header {
-    background: rgb(102, 100, 100) url('../imagens/fundo-preto-background114-1024x640.png') center center no-repeat fixed;
+    background: rgba(0, 0, 0, 0.774) /*url('../imagens/fundo-preto-background114-1024x640.png')*/ center center no-repeat fixed;
     background-size: cover;
     min-height: 150px;
     
     text-align: center;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 
 header > h1 {
@@ -273,7 +291,7 @@ header > p {
 
 nav {
     top: auto;
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: rgba(0, 0, 0, 0.918);
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -283,6 +301,11 @@ nav {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
     text-align: center;
     height: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;   
 }
 
 div#menu {
@@ -367,16 +390,17 @@ a.menua {
 a.menua:hover {
     box-shadow: 0px 0px 4px white;
     text-shadow: 2px 2px 3px #b1b1b1e3;
-    background-color: #053c7c8e;
-    color: rgb(0, 0, 0);
+    background-color: #0000008e;
+    color: rgb(168, 168, 168);
     text-decoration: none;
     border-radius: 10px;
+    transition-duration: 0.5s;
     
 }
 
 a.menua:active {
     box-shadow: 0px 0px 4px white;
-    background-color: #1168cc8e;
+    background-color: #115ccc8e;
     border-radius: 30px;
     color: rgb(255, 255, 255);
 }
@@ -396,11 +420,17 @@ main {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.384);
     /* ------------------------------------------------ */
     padding: 10px 20px 20px 20px;
+
+    margin: auto;
+    margin-bottom: 30px;
+    
+}
+
+div.main_1 {
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    
 }
 
 main img {
@@ -805,3 +835,47 @@ footer a:hover {
 
 /* ------------------Media Query----------------- */
 
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #000;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .hamburguer:before,
+  .hamburguer:after {
+    background: #000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .hamburguer:before {
+    top: -10px;
+  }
+  
+  .hamburguer:after {
+    bottom: -10px;
+  }
+  
+  input:checked ~ label.hamburguer {
+    transform: rotate(45deg);
+  }
+  
+  input:checked ~ label.hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  
+  input:checked ~ label.hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+  

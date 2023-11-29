@@ -40,336 +40,300 @@
     </nav>
 
     <main>
-        <h4>form:</h4>
-        <ul>
-            <li>
-                action | onde vai ser mandado os dados
-            </li>
-            <li>
-                method | o metodo 
-                <ul>
-                    <li>
-                        GET | padrão | ate 3mil letras
-                    </li>
-                    <li>
-                        POST | Não aparece na url os dados, mas aparece em inspecionar | Network-cadastro-Headers
-                    </li>
-                </ul>
-            </li>
-            <li>
-                autocomplete 
-                <ul>
-                    <li>
-                        off | para não preencher automatico
-                    </li>
-                    <li>
-                        on | dica de nome que ja foi ultilizado e para autocomplete nos input
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <h4>input:</h4>
-        <ul>
-            <li>
-                text | preenchimento
-                <ul>
-                    <li>
-                        name
-                    </li>
-                    <li>
-                        id
-                    </li>
-                </ul>
-            </li>
-            <li>
-                submit | enviar
-                <ul>
-                    <li>
-                        value
-                    </li>
-                </ul>
-            </li>
-            <li>
-                password | senhas
-                <ul>
-                    <li>
-                        name
-                    </li>
-                    <li>
-                        id
-                    </li>
-                </ul>
-            </li>
-            <li>
-                reset | limpar
-                <ul>
-                    <li>
-                        value
-                    </li>
-                </ul>
-            </li>
-            <li>
-                required | obrigatorio preencher
-            </li>
-            <li>
-                minlength | minimo que precisa
-            </li>
-            <li>
-                maxlength | maximo permitido
-            </li>
-            <li>
-                size | tamanho da caixa
-            </li>
-            <li>
-                placeholder | dica dentro do espaço de preenchimento
-            </li>
-            <li>
-                autocomplete | serve para varios preenchimentsos
-            </li>
-        </ul>
-
-
-
-        <h2>
-            formulario iniciante
-        </h2>
-
-        <form action="cadastro.php">
-            <p>
-                <label for="inome">nome:</label>
-                <input type="text" name="nome" id="inome">
-            </p>
-
-            <p>
-                <label for="isobrenome">sobrenome:</label>
-                <input type="text" name="sobrenome" id="isobrenome">
-            </p>
-
-            <input type="submit" value="enviar">
-        </form>
-
-        <h2>
-            formulario 2
-        </h2>
-
-        <form action="cadastro.php" method="post">
-            <p>
-                <label for="iusu">Usuário</label>
-                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="nome do usuario">
-            </p>
-            <p>
-                <label for="isen">Senha:</label>
-                <input type="password" name="sen" id="isen" required placeholder="senha do usuario">
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
-        </form>
-        
-        <h2>
-            &#127766 Formulário 3 Números
-        </h2>
-
-        <form action="cadastro.php" method="get" autocomplete="on">
-        
-            <p>
-                <label for="imedia">Média</label>
-                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5"><!--min é o minimo dos numeros| max o maximo dos numeros-->
-                <!-- value tira o placeholder(caracteristica q fica dentro da caixa como dica) -->
-            </p>
-            <p>
-                <label for="imes">Período letivo</label>
-                <input type="month" name="mes" id="imes">
-            </p>
-            <p>
-                <label for="idia">dia da prova</label>
-                <input type="date" name="dia" id="idia">
-            </p>
-            <p>
-                <label for="ihora">hora da prova</label>
-                <input type="time" name="hora" id="ihora">
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
-        
+        <div class="main_1">
+            <h4>form:</h4>
+            <ul>
+                <li>
+                    action | onde vai ser mandado os dados
+                </li>
+                <li>
+                    method | o metodo
+                    <ul>
+                        <li>
+                            GET | padrão | ate 3mil letras
+                        </li>
+                        <li>
+                            POST | Não aparece na url os dados, mas aparece em inspecionar | Network-cadastro-Headers
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    autocomplete
+                    <ul>
+                        <li>
+                            off | para não preencher automatico
+                        </li>
+                        <li>
+                            on | dica de nome que ja foi ultilizado e para autocomplete nos input
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>input:</h4>
+            <ul>
+                <li>
+                    text | preenchimento
+                    <ul>
+                        <li>
+                            name
+                        </li>
+                        <li>
+                            id
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    submit | enviar
+                    <ul>
+                        <li>
+                            value
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    password | senhas
+                    <ul>
+                        <li>
+                            name
+                        </li>
+                        <li>
+                            id
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    reset | limpar
+                    <ul>
+                        <li>
+                            value
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    required | obrigatorio preencher
+                </li>
+                <li>
+                    minlength | minimo que precisa
+                </li>
+                <li>
+                    maxlength | maximo permitido
+                </li>
+                <li>
+                    size | tamanho da caixa
+                </li>
+                <li>
+                    placeholder | dica dentro do espaço de preenchimento
+                </li>
+                <li>
+                    autocomplete | serve para varios preenchimentsos
+                </li>
+            </ul>
+            <h2>
+                formulario iniciante
+            </h2>
+            <form action="cadastro.php">
+                <p>
+                    <label for="inome">nome:</label>
+                    <input type="text" name="nome" id="inome">
+                </p>
+                <p>
+                    <label for="isobrenome">sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome">
+                </p>
+                <input type="submit" value="enviar">
+            </form>
+            <h2>
+                formulario 2
+            </h2>
+            <form action="cadastro.php" method="post">
+                <p>
+                    <label for="iusu">Usuário</label>
+                    <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="nome do usuario">
+                </p>
+                <p>
+                    <label for="isen">Senha:</label>
+                    <input type="password" name="sen" id="isen" required placeholder="senha do usuario">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
             
-        <h2>Formulário 4 Email e tel</h2>
-
+            <h2>
+                &#127766 Formulário 3 Números
+            </h2>
             <form action="cadastro.php" method="get" autocomplete="on">
-                <fieldset>
-                    <legend>Dados pessoais</legend>
+            
+                <p>
+                    <label for="imedia">Média</label>
+                    <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5"><!--min é o minimo dos numeros| max o maximo dos numeros-->
+                    <!-- value tira o placeholder(caracteristica q fica dentro da caixa como dica) -->
+                </p>
+                <p>
+                    <label for="imes">Período letivo</label>
+                    <input type="month" name="mes" id="imes">
+                </p>
+                <p>
+                    <label for="idia">dia da prova</label>
+                    <input type="date" name="dia" id="idia">
+                </p>
+                <p>
+                    <label for="ihora">hora da prova</label>
+                    <input type="time" name="hora" id="ihora">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            
+            
+            <h2>Formulário 4 Email e tel</h2>
+                <form action="cadastro.php" method="get" autocomplete="on">
+                    <fieldset>
+                        <legend>Dados pessoais</legend>
+                        <p>
+                            <label for="iemail">E-mail</label>
+                            <input type="email" name="email" id="iemail" required autocomplete="email">
+                        </p>
+                        <p>
+                            <label for="itel">Telefone</label>
+                            <input type="tel" name="tel" id="itel" autocomplete="tel">
+                            <!-- Estudar sobre regEX -->
+                        </p>
+                    </fieldset>
+                </form>
+            <h2>
+                Formulário 5 Checkbox e Radios
+            </h2>
+                <form action="cadastro.php" method="get" autocomplete="on">
+                    <fieldset>
+                        <legend>
+                            Esportes
+                        </legend>
+                        <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">Futebol</label> <br>
+                        <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label> <br>
+                        <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">Volei</label> <br>
+                        <input type="checkbox" name="games" id="igames"> <label for="igames">Games</label>
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <input type="radio" name="sexo" id="imas" value="Masculino"> <label for="imas">Masculino</label> <br>
+                        <input type="radio" name="sexo" id="ifem" value="Feminino"> <label for="ifem">Feminino</label> <br>
+                        <!-- quando coloca o mesmo name em radio marca so um e desmarca o outro -->
+                    </fieldset>
+                </form>
+            <h2>Formulário 6 cor, Nivel e Foto perfil</h2>
+            <form action="cadastro.php" method="get">
+            
+                <p>
+                    <label for="icor">cor:</label>
+                    <input type="color" name="cor" id="icor" value="#0c0074da">
+                </p>
+                <p>
+                    <label for="inivel">Nível de satisfação:</label>
+                    <input type="range" name="nivel" id="inivel" min="1" max="5" value="3">
+                </p>
+            </form>
+            <form action="cadastro.php" method="POST">
+            
                     <p>
-                        <label for="iemail">E-mail</label>
-                        <input type="email" name="email" id="iemail" required autocomplete="email">
+                        <label for="ifoto">Foto de Perfil:</label>
+                        <input type="file" name="foto" id="ifoto">
+                        <!-- para arquivos de mais de 3000bytes usa-se o post -->
+                    </p>
+            </form>
+            
+                <h2>Formulário 7 </h2>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <p>
+                    <label for="iest">Estado</label>
+                    <select name="estado" id="iest">
+                        <option value="" selected>---Escolha---</option>
+                        <optgroup label="Região Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="iprof">Profissão</label>
+                    <input type="text" name="profissão" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option value="ADM">Administrador</option>
+                        <option value="DEV">Desenvolvedor</option>
+                    </datalist>
+                </p>
+            
+            </form>
+            <form action="cadastro.php" method="post">
+                <p>
+                    <label for="imsg">Mensagens:</label>
+                    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                </p>
+            
+            </form>
+            <h2>Formulário 8</h2>
+                <form action="cadastro.php" method="get" autocomplete="on">
+            
+                    <p>
+                        <label for="in1">Numero 1:</label>
+                        <input type="number" name="n1" id="in1" min="0" max="50" required
+                        oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                    </p>
+            
+                    <p>
+                        <label for="in2">Numero 2:</label>
+                        <input type="number" name="n2" id="in2" min="0" max="50" required
+                        oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
                     </p>
                     <p>
-                        <label for="itel">Telefone</label>
-                        <input type="tel" name="tel" id="itel" autocomplete="tel">
-                        <!-- Estudar sobre regEX -->
+                        <label for="isoma">Soma:</label>
+                        <output name="Soma" id="isoma">0</output>
                     </p>
-                </fieldset>
-            </form>
-
-        <h2>
-            Formulário 5 Checkbox e Radios
-        </h2>
-            <form action="cadastro.php" method="get" autocomplete="on">
-                <fieldset>
-                    <legend>
-                        Esportes
-                    </legend>
-                    <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">Futebol</label> <br>
-                    <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label> <br>
-                    <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">Volei</label> <br>
-                    <input type="checkbox" name="games" id="igames"> <label for="igames">Games</label>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Sexo</legend>
-                    <input type="radio" name="sexo" id="imas" value="Masculino"> <label for="imas">Masculino</label> <br>
-                    <input type="radio" name="sexo" id="ifem" value="Feminino"> <label for="ifem">Feminino</label> <br>
-                    <!-- quando coloca o mesmo name em radio marca so um e desmarca o outro -->
-                </fieldset>
-            </form>
-
-        <h2>Formulário 6 cor, Nivel e Foto perfil</h2>
-
-        <form action="cadastro.php" method="get">
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
             
-            <p>
-                <label for="icor">cor:</label>
-                <input type="color" name="cor" id="icor" value="#0c0074da">
-            </p>
-
-            <p>
-                <label for="inivel">Nível de satisfação:</label>
-                <input type="range" name="nivel" id="inivel" min="1" max="5" value="3">
-            </p>
-        </form>
-
-        <form action="cadastro.php" method="POST">
+                </form>
+                <form action="cadastro.php">
+                    <p>
+                        <label for="inum">Número:</label>
+                        <input type="range" name="Num" id="inum" min="0" max="10" value="5"
+                        oninput="ival.innerHTML = Number(inum.value)">
+                        <output id="ival">5</output>
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </form>
+                <form action="cadastro.php">
+                    <p>
+                        <label for="iano">Ano Nasceu:</label>
+                        <input type="number" name="Ano" id="iano" min="1900" max="2023"
+                        oninput="calcidade()">
+                    </p>
+                    <p>
+                        <label for="iidade">Sua idade:</label>
+                        <output id="iidade">0</output>
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                    <script>
+                        function calcidade() {
+                            let atual = new Date().getFullYear()
+                            iidade.innerHTML = Number(atual) - Number(iano.value)
+                        }
+                    </script>
+                </form>
             
-                <p>
-                    <label for="ifoto">Foto de Perfil:</label>
-                    <input type="file" name="foto" id="ifoto">
-                    <!-- para arquivos de mais de 3000bytes usa-se o post -->
-                </p>
-        </form>
-
-    <h2>Formulário 7 </h2>
-
-        <form action="cadastro.php" method="get" autocomplete="on">
-
-            <p>
-                <label for="iest">Estado</label>
-                <select name="estado" id="iest">
-
-                    <option value="" selected>---Escolha---</option>
-
-                    <optgroup label="Região Sudeste">
-
-                        <option value="SP">São Paulo</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="MG">Minas Gerais</option>
-
-                    </optgroup>
-
-                </select>
-            </p>
-
-            <p>
-                <label for="iprof">Profissão</label>
-                <input type="text" name="profissão" id="iprof" list="lstprof">
-                <datalist id="lstprof">
-                    <option value="ADM">Administrador</option>
-                    <option value="DEV">Desenvolvedor</option>
-                </datalist>
-            </p>
-            
-        </form>
-
-        <form action="cadastro.php" method="post">
-
-            <p>
-                <label for="imsg">Mensagens:</label>
-                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
-            </p>
-            
-        </form>
-
-        <h2>Formulário 8</h2>
-            <form action="cadastro.php" method="get" autocomplete="on">
-                
-                <p>
-                    <label for="in1">Numero 1:</label>
-                    <input type="number" name="n1" id="in1" min="0" max="50" required 
-                    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
-                </p> 
-                
-                <p>
-                    <label for="in2">Numero 2:</label>
-                    <input type="number" name="n2" id="in2" min="0" max="50" required 
-                    oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
-                </p>
-
-                <p>
-                    <label for="isoma">Soma:</label>
-                    <output name="Soma" id="isoma">0</output>
-                </p>
-
-                <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </p>
-        
-            </form>
-
-            <form action="cadastro.php">
-
-                <p>
-                    <label for="inum">Número:</label>
-                    <input type="range" name="Num" id="inum" min="0" max="10" value="5"
-                    oninput="ival.innerHTML = Number(inum.value)">
-                    <output id="ival">5</output>
-                </p>
-
-                <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </p>
-
-            </form>
-
-            <form action="cadastro.php">
-
-                <p>
-                    <label for="iano">Ano Nasceu:</label>
-                    <input type="number" name="Ano" id="iano" min="1900" max="2023"
-                    oninput="calcidade()">
-                </p>
-
-                <p>
-                    <label for="iidade">Sua idade:</label>
-                    <output id="iidade">0</output>
-                </p>
-
-                <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </p>
-
-                <script>
-                    function calcidade() {
-                        let atual = new Date().getFullYear()
-                        iidade.innerHTML = Number(atual) - Number(iano.value)
-                    }
-                </script>
-
-            </form>
-        
+        </div>
     </main>
 </body>
 </html>
