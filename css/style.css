@@ -357,12 +357,23 @@ section.menum:hover > a {
 p.menup {
     background-color: #0c0074da;
     border-radius: 10px;
-
+    animation: colorchange 3s infinite;
+    
     margin-bottom: 15px;
     padding: 10px;
     text-indent: 0px;
     display: inline-block;
 }
+
+@keyframes colorchange {
+    0% {color: blue;}
+    25% {color: rgb(156, 0, 228);}
+    50% {color: red;}
+    75% {color: rgb(221, 118, 0);}
+    100% {color: blue;}
+}
+
+
 
 div#menu:hover > p.menup {
     display: none;
@@ -446,7 +457,7 @@ main img.pequena {
 }
 
 main h1 {
-    color: var(--cor5);
+    color: rgb(156, 0, 228);
     font-family: var(--fonte-android);
     font-weight: normal;
     font-size: 1.8em;
@@ -835,47 +846,6 @@ footer a:hover {
 
 /* ------------------Media Query----------------- */
 
-.hamburguer {
-    position: relative;
-    display: block;
-    background: #000;
-    width: 30px;
-    height: 2px;
-    top: 29px;
-    left: 15px;
-    transition: 0.5s ease-in-out;
-  }
-  
-  .hamburguer:before,
-  .hamburguer:after {
-    background: #000;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-  }
-  
-  .hamburguer:before {
-    top: -10px;
-  }
-  
-  .hamburguer:after {
-    bottom: -10px;
-  }
-  
-  input:checked ~ label.hamburguer {
-    transform: rotate(45deg);
-  }
-  
-  input:checked ~ label.hamburguer:before {
-    transform: rotate(90deg);
-    top: 0;
-  }
-  
-  input:checked ~ label.hamburguer:after {
-    transform: rotate(90deg);
-    bottom: 0;
-  }
+
+
   
