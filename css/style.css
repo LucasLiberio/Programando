@@ -457,10 +457,12 @@ main img.pequena {
 }
 
 main h1 {
-    color: rgb(156, 0, 228);
+    color: rgb(0, 0, 0);
     font-family: var(--fonte-android);
     font-weight: normal;
     font-size: 1.8em;
+    text-shadow: -1px 0px 9px rgb(236, 236, 236);
+
 }
 
 main h2 {
