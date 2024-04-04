@@ -1,0 +1,3 @@
+Fazer a tela cleans
+criar uma tela onde aparece tudo sem precisar abrir outra pagina (na mesma pagina aparece oque precisa ai não precisa recarregar a pagina)
+criar sistema de visualização para oque for aparecer
