@@ -255,10 +255,12 @@ aside.amostra > a:active {
 header {
     background: rgba(0, 0, 0, 0.774) /*url('../imagens/fundo-preto-background114-1024x640.png')*/ center center no-repeat fixed;
     background-size: cover;
+    
     min-height: 150px;
     
     text-align: center;
     padding-top: 80px;
+    margin-bottom: 30px;
 }
 
 header > h1 {
@@ -296,11 +298,11 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 7px;
+    padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.349);
     text-align: center;
-    height: auto;
+    height: 40px;
 
     position: fixed;
     top: 0;
@@ -336,6 +338,8 @@ section.menum {
     background-color: rgba(0, 0, 0, 0);
     text-align: justify;
     display: none;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 div#menu:hover > section.menum {
@@ -359,7 +363,6 @@ p.menup {
     border-radius: 10px;
     animation: colorchange 3s infinite;
     
-    margin-bottom: 15px;
     padding: 10px;
     text-indent: 0px;
     display: inline-block;
@@ -367,9 +370,9 @@ p.menup {
 
 @keyframes colorchange {
     0% {color: blue;}
-    25% {color: rgb(156, 0, 228);}
-    50% {color: red;}
-    75% {color: rgb(221, 118, 0);}
+    25% {color: rgb(0, 153, 255);}
+    50% {color: rgb(0, 195, 255);}
+    75% {color: rgb(0, 153, 255);}
     100% {color: blue;}
 }
 
@@ -390,11 +393,12 @@ a.menua {
     font-weight: bold;
     transition-duration: 0.1s;
     display: inline-block;
+
     padding: 10px;
     box-shadow: 0px 0px 2px white;
     max-height: 25px;
-    position: relative;
-    top: 4px;
+    margin-top: 7px;
+    
     
 }
 
@@ -420,7 +424,7 @@ a.menua:active {
 /* -----------------------------Main--------------------------------------- */
 
 main {
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
 
     background: rgba(0, 0, 0, 0.774) ;
     background-attachment: fixed;
@@ -431,7 +435,7 @@ main {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.384);
     /* ------------------------------------------------ */
     padding: 10px 20px 20px 20px;
-
+    max-width: 900px;
     margin: auto;
     margin-bottom: 30px;
     
