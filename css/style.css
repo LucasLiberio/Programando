@@ -75,7 +75,8 @@ body {
 body#css {
     font-family:var(--fonte-destaque);
     background: rgb(0, 0, 0) url('../imagens/espaço\ e\ terra.jpg') center center no-repeat fixed;
-    background-size: cover;
+    background-size: 150% 150%;
+    animation: gradient 300s ease infinite;
     height: 100vh;
 }
 
