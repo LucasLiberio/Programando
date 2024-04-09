@@ -3,16 +3,55 @@
 * {
     padding: 0px;
     margin: 0px;
+    
+}
+
+body {
+
+    
+
+}
+
+main {
+    background-color: rgb(184, 184, 184);
+
+    height: 100vh;
+    width: 100vw;
 
 }
 
 .section_inicio {
-    width: 100vw;
-    height: 100vh;
+    background: url('../imagens/Montanha.png') center center no-repeat transparent;
+    background-size: cover;
+    border-radius: 30px;
 
-    background-color: rgb(184, 184, 184);
+    height: 94%;
+    width: 94%;
+
+    position: relative;
+    left: 5%;
+    top: 3%;
+
 }
 
-.div_data_hora {
-    
+section.Redes_sociais {
+
+    position: absolute;
+    left: auto;
+    top: 80%;
+
+}
+
+.Redes_sociais a#Github{
+    position: absolute;
+    top: -43%;
+    left: 43%;
+
+}
+
+.Redes_sociais p {
+
+    rotate: 270deg;
+    top: 10%;
+
 }
