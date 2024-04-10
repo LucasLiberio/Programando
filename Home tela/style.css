@@ -1,57 +1,98 @@
 @charset "UTF-8";
 
-* {
+*{
     padding: 0px;
     margin: 0px;
-    
-}
-
-body {
-
-    
 
 }
 
-main {
-    background-color: rgb(184, 184, 184);
-
-    height: 100vh;
+main{
+    background: rgb(190, 190, 190);
     width: 100vw;
+    height: 100vh;
+}
+
+.quadro_branco{
+    background: white url(Imagens/Montanha.png) center center no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    width: 92%;
+    height: 95%;
+    position: relative;
+    top: 2%;
+    right: -7%;
+}
+
+nav{
+    text-align: justify;
+
+    position: absolute;
+
+    border-radius: 0px 20px 0px 0px;
+
+    width: 84%;
+    height: 50px;
+
+    right: 0%;
+    top: 0%;
 
 }
 
-.section_inicio {
-    background: url('../imagens/Montanha.png') center center no-repeat transparent;
-    background-size: cover;
-    border-radius: 30px;
+.Button{
 
-    height: 94%;
-    width: 94%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+
+    padding: 7px;
 
     position: relative;
-    left: 5%;
-    top: 3%;
+    top: 34%;
+    right: -67%;
+
 
 }
 
-section.Redes_sociais {
-
-    position: absolute;
-    left: auto;
-    top: 80%;
-
-}
-
-.Redes_sociais a#Github{
-    position: absolute;
-    top: -43%;
-    left: 43%;
+.Data_Hora{
+    text-align: justify;
+    position: relative;
+    top: -2%;
+    right: 8%;
+    background: rgb(34, 34, 34);
+    border-radius: 0px 0px 40px 0px;
+    width: 24%;
+    height: 147px;
 
 }
 
-.Redes_sociais p {
+p {
 
-    rotate: 270deg;
-    top: 10%;
+    color: white;
+
+}
+
+.time{
+
+    position: relative;
+    top: 15%;
+    right: -12%;
+    font-size: 243%;
+    width: 35%;
+
+}
+
+section.quadro_branco > p {
+
+    position: relative;
+    top: 36%;
+    right: -64%;
+
+    font-size: 280%;
+    color: rgb(92, 0, 0);
+    text-shadow: black 2px 2px 4px;
+
+    width: 15%;
 
 }

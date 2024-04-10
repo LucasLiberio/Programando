@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site</title>
+</head>
+<body>
+    <main>
+
+        <section class="quadro_branco">
+
+            <section class="Data_Hora">
+
+                <p class="time"><time datetime="" id="current-time"></time></p>
+
+            </section>
+
+            <nav class="nav">
+
+                <a class="Button" href="#">Home</a>
+                <a class="Button" href="#">HTML</a>
+                <a class="Button" href="#">CSS</a>
+                <a class="Button" href="#">Link</a>
+                <a class="Button" href="#">Perfil</a>
+
+
+            </nav>
+
+            <p class="Data_hora_p">Site teste</p>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
+
+<script>
+    var now = new Date();
+    var formattedDateTimeString = now.toLocaleString();
+    var timeElement = document.getElementById("current-time");
+    timeElement.textContent = formattedDateTimeString;
+  </script>
