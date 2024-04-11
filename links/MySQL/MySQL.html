@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MySQL</title>
+</head>
+<body>
+
+<main>
+
+    <h1>MySQL:</h1>
+
+    <article>
+
+        <section>
+        
+            <p> <br>
+               Campos > Registros > Tabelas > Banco de Dados
+            </p> <br>
+
+
+            <p>
+                Char é estatico na quantidade;
+                Varchar varia conforme a quantidade;
+            </p>
+
+            <p>
+                <code>CREATE DATABASE "nome";</code> --Criar banco de dados <br>
+                <code>CREATE TABLE "nome"( </code> --Criar tabela <br>
+                <code>"Campos,"</code> <br>
+                <code>);</code>
+            </p> <br>
+
+            <p>Exemplo: <br>
+                <pre>
+                    
+CREATE DATABASE cadastros;
+CREATE TABLE pessoas (
+    nome varchar(30),
+    idade tinyint,
+    sexo char(1),
+    peso float,
+    altura float,
+    nacionalidade varchar(20)
+);
+                </pre>
+            </p>
+
+            <img width="500px" height="300px" src="imagens/Tipos Primitivos MySQL.png" alt="Tipos Primitivos MySQL">
+
+        </section>
+
+    </article>
+
+</main>
+
+</body>
+</html>
