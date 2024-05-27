@@ -1,0 +1,11 @@
+nome = input('Qual seu nome? ')
+print('Prazer em te conhecer {}!'.format(nome))
+print('Prazer em te conhecer {:20}!'.format(nome))
+print('Prazer em te conhecer {:>20}!'.format(nome))
+print('Prazer em te conhecer {:<20}!'.format(nome))
+print('Prazer em te conhecer {:^20}!'.format(nome))
+print('Prazer em te conhecer {:=^20}!'.format(nome))
+
+n1 = int(input('Um valor: '))
+n2 = int(input('Outro valor: '))
+print('O valor da soma é {}!'.format(n1+n2))
