@@ -34,12 +34,12 @@ main{
 }
 
 @keyframes myAnim {
-	0% {
-		transform: rotate(0);
+    0% {
+        transform: rotate(0);
         top: 0%;
         right: 0%;
-	}
-    
+    }
+
     25% {
         right: -10%;
     }
@@ -54,12 +54,12 @@ main{
         right: -20%;
     }
 
-	100% {
-		transform: rotate(360deg);
+    100% {
+        transform: rotate(360deg);
         top: 0%;
 
         right: 0%;
-	}
+    }
 
 }
 
@@ -81,7 +81,7 @@ section{
     background: linear-gradient(0deg, #8c00ff00 0%, #c030b400 100%);
     border: 3px dashed rgb(221, 221, 221);
 
-    animation: pontilhados 10s linear 0s infinite normal none ;
+    right: -47%;
 
     border-radius: 50%;
 
@@ -91,31 +91,33 @@ section{
     height: 160px;
 }
 
+.pontilhado:hover {
+    animation: pontilhados 10s linear 0s infinite normal none ;
+}
+
 @keyframes pontilhados {
-	0% {
-		transform: rotate(0);
-        top: 0%;
+    0% {
+        transform: rotate(0);
+       
         right: -47%;
-	}
-    
+    }
+
     25% {
     }
 
     50% {
-        top: 10%;
-        width: 280px;
-        height: 280px;
+    
 
     }
 
     60% {
     }
 
-	100% {
-		transform: rotate(360deg);
-        top: 0%;
+    100% {
+        transform: rotate(360deg);
+    
         right: -47%;
 
-	}
+    }
 
 }
