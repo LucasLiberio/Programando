@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Home
+    </title>
+</head>
+<body>
+
+    <section id="montanha">
+        
+    </section>
+
+    <header>
+        <section id="clock">
+            <div id="relogio">00:00</div>
+            <span id="data"></span>
+        </section>
+
+        <nav>
+
+            <a href="../formularios.html">Home</a>
+            <a href="../formularios.html">HTML</a>
+            <a href="../formularios.html">CSS</a>
+            <a href="../formularios.html">Outros</a>
+            <a href="../formularios.html">Projetos</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="social">
+
+            <a class="logos_sociais" href="#"><img src="Imagens/linkedin.png" alt="linkedin"></a><br>
+            <a class="logos_sociais" href="#"><img src="Imagens/Imagem1.png" alt="WhatsApp"></a><br>
+            <a class="logos_sociais" href="#"><img src="Imagens/github.png" alt="GitHub"></a>
+
+        </section>
+
+        <section id="titulo">
+            <h1>
+                Linguagens
+            </h1>
+            <p>
+                Por <a href="#">Lucas Libério</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+
+        function atualizarRelogio() {
+                    const agora = new Date();
+                    const horas = agora.getHours().toString().padStart(2, '0');
+                    const minutos = agora.getMinutes().toString().padStart(2, '0');
+                    const segundos = agora.getSeconds().toString().padStart(2, '0');
+                    document.getElementById('relogio').textContent = `${horas}:${minutos}`;
+                }
+
+                setInterval(atualizarRelogio, 1000);
+
+                atualizarRelogio();
+
+    </script>
+    <script>
+        // Obtém a data atual
+        const dataAtual = new Date();
+
+        // Formata a data (dia/mês/ano)
+        const dataFormatada = dataAtual.toLocaleDateString('pt-BR', {
+            day: '2-digit',
+            month: '2-digit',
+        });
+
+        // Exibe a data no elemento HTML com id "data"
+        document.getElementById('data').textContent = dataFormatada;
+    </script>
+    
+</body>
+</html>
