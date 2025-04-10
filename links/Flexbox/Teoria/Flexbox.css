@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+div.conteiner{
+    display: flex; /*deixa o conteiner flexivel para poder estar organizando os itens com flex*/
+    /* flex-direction: row; qual direção que irá ficar os itens| row em linha| column em coluna | e para cada um tem o reverse que é o reverso da direção */
+    /* flex-wrap: nowrap; nowrap sem quebra | wrap quebra do bloco |  e tem o reverse que é o reverso da direção */
+    flex-flow: row nowrap; /*shorthand flex-direction + flex-wrap*/
+
+    border: 1px solid black;
+
+
+}
+
+div.item{
+    flex: auto; /*itens organizados automaticamente com o width do conteiner pai*/
+
+    background-color: antiquewhite;
+    border: 1px solid black;
+
+    text-align: center;
+}
+
+div.conteiner1{
+    height: 100px; /*para usar o align-items precisa estar aumentando o height do item*/
+
+    align-items: stretch; /* flex-start | flex-end | center */
+
+    display: flex;
+
+    flex-flow: row nowrap; 
+
+    border: 1px solid black;
+
+    justify-content: flex-start; /*flex-end | center | space-between | space-evenly | space-around*/
+
+}
+
+div.item1{
+    
+    background-color: antiquewhite;
+
+    border: 1px solid black;
+
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(144deg, rgba(250,145,176,1) 0%, rgba(250,218,173,1) 70%) no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    background-color: rgba(240, 178, 255, 0.699);
+    height: 30vh;
+    width: 30vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    background-color: rgba(188, 255, 233, 0.74);
+    height: 100px;
+    width: 100px;
+}
+
+div.conteiner2{
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch; /*flex start | flex-end | center | space-between | space-evenly | space-around*/ 
+    height: 100px;
+}
+
+div.item2{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px;
+}
+
+div.conteiner3{
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+div.item3{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+div#i1 {
+    order: 0;
+}
+
+div#i2 {
+    order: -2;
+}
+
+div#i3 {
+    order: 4;
+}
+
+div#i4 {
+    order: 8;
+}
+
+div#i5 {
+    order: 2;
+}
+
+div#i6 {
+    order: 0;
+}
+
+div#i7 {
+    order: -4;
+}
+
+div.conteiner4{
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    height: 100px;
+}
+
+div.item4{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+div#j1 {
+    align-self: auto; /*Utiliza o valor do pai | inherit que é o valor herdado do pai*/
+}
+
+div#j2 {
+    align-self: flex-start;
+}
+
+div#j3 {
+    align-self: flex-end;
+}
+
+div#j4 {
+    align-self: center;
+}
+
+div#j5 {
+    align-self: stretch;
+}
+
+div#j6 {
+    align-self: inherit;    /*inherit que é o valor herdado do pai  */
+}
+
+div.conteiner5{
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+div.item5{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 150px; /*auto ajusta automaticamente com o conteudo*/  /*se nao tiver wrap ele vai adaptar o tamanho diminuindo o conteudo conforme o tamanho da janela sem quebrar o conteudo*/
+}
+
+div.conteiner6{
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+div.item6{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 150px;
+    flex-shrink: 1; /*0 não permite diminuir o item | 1 ele permite diminuir o item*/
+    flex-grow: 0; /*0 não permite aumentar o item | 1 ele permite aumentar o item*/
+}
+
+div.conteiner7{
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+div.item7{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 350px;
+    flex-shrink: 1; 
+    flex-grow: 0; 
+}
+
+div.item7_1{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 350px;
+    flex-shrink: 0; 
+    flex-grow: 2; 
+}
+
+div.item7_2{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 350px;
+    flex-shrink: 2; 
+    flex-grow: 1; 
+}
+
+div.item8{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    
+    flex: 0 1 350px; /*shorthand para flex | flex: grow + shrink + basis | flex: 0 1 auto = flex: initial | flex: 0 0 auto = flex: none | flex: 1 1 auto = flex: auto | flex: 2 = flex: 2 1 auto (só muda o grow)*/
+}
+
+div.item8_1{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    
+    flex: 2 0 350px;
+}
+
+div.item8_2{
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    
+    flex: 1 2 350px;
+}

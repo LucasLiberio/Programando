@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estudos.FXMLEstudosController">
+   <children>
+      <WebView prefHeight="153.0" prefWidth="325.0">
+         <effect>
+            <DropShadow color="#0000007c" />
+         </effect>
+      </WebView>
+      <Label fx:id="lblMensagem" layoutX="79.0" layoutY="164.0" style="-fx-background-color: lightgray;" text="Label" />
+      <Button fx:id="btnClick" layoutX="19.0" layoutY="160.0" mnemonicParsing="false" onAction="#clicouBotao" prefHeight="8.0" prefWidth="57.0" text="Button" />
+      <Separator layoutY="191.0" prefHeight="3.0" prefWidth="325.0" style="-fx-background-color: black;" />
+      <TextField fx:id="txtN1" layoutX="19.0" layoutY="203.0" prefHeight="25.0" prefWidth="28.0" />
+      <TextField fx:id="txtOperador" layoutX="47.0" layoutY="203.0" prefHeight="25.0" prefWidth="65.0" promptText="text field" />
+      <TextField fx:id="txtN2" layoutX="112.0" layoutY="203.0" prefHeight="25.0" prefWidth="28.0" />
+      <Button fx:id="btnSoma" layoutX="140.0" layoutY="203.0" mnemonicParsing="false" onAction="#clicouResultou" text="=" />
+      <Label fx:id="lblResultado" layoutX="171.0" layoutY="208.0" text="0" />
+      <Separator layoutY="237.0" prefHeight="3.0" prefWidth="325.0" style="-fx-background-color: black;" />
+      <TextField fx:id="txtNu" layoutX="84.0" layoutY="251.0" prefHeight="25.0" prefWidth="57.0" />
+      <Label layoutX="19.0" layoutY="255.0" text="Numerador" />
+      <Label layoutX="153.0" layoutY="255.0" text="Denominador" />
+      <TextField fx:id="txtDen" layoutX="233.0" layoutY="251.0" prefHeight="25.0" prefWidth="57.0" />
+      <Button fx:id="btnDividir" layoutX="22.0" layoutY="285.0" mnemonicParsing="false" onAction="#botaoDividir" text="Dividir" />
+      <Label layoutX="88.0" layoutY="289.0" text="Divisão" />
+      <Label layoutX="156.0" layoutY="289.0" text="Resto" />
+      <Label fx:id="lblDiv" layoutX="137.0" layoutY="289.0" text="0" />
+      <Label fx:id="lblResto" layoutX="190.0" layoutY="289.0" text="0" />
+      <Separator layoutY="321.0" prefHeight="3.0" prefWidth="325.0" style="-fx-background-color: black;" />
+      <Label layoutX="22.0" layoutY="335.0" text="Ano de Nascimento" />
+      <Label layoutX="21.0" layoutY="375.0" text="Idade" />
+      <Label layoutX="21.0" layoutY="402.0" text="Situação" />
+      <TextField fx:id="txtAno1" layoutX="137.0" layoutY="331.0" />
+      <Button fx:id="btnCalc1" layoutX="137.0" layoutY="363.0" mnemonicParsing="false" onAction="#calculoIdade" text="Calcular Idade" />
+      <Label fx:id="lblIdade1" layoutX="66.0" layoutY="375.0" text="0" />
+      <Label fx:id="lblSituacao1" layoutX="81.0" layoutY="402.0" prefHeight="17.0" prefWidth="45.0" text="&lt;vazio&gt;" />
+      <Separator layoutY="427.0" prefHeight="3.0" prefWidth="325.0" style="-fx-background-color: black;" />
+      <TextField fx:id="txtValor1" layoutX="38.0" layoutY="437.0" prefHeight="25.0" prefWidth="91.0" />
+      <Label layoutX="7.0" layoutY="441.0" text="Valor" />
+      <Button fx:id="btnVerificar1" layoutX="139.0" layoutY="437.0" mnemonicParsing="false" onAction="#vVerificou1" text="Verificar" />
+      <Label fx:id="lblResultado1" layoutX="212.0" layoutY="441.0" text="Resultado" />
+      <Separator layoutY="468.0" prefHeight="3.0" prefWidth="325.0" style="-fx-background-color: black;" />
+      <Label layoutX="8.0" layoutY="481.0" text="Ano Nascimento:" />
+      <TextField fx:id="txtAno" layoutX="101.0" layoutY="477.0" prefHeight="25.0" prefWidth="73.0" />
+      <Button fx:id="btnVoto" layoutX="186.0" layoutY="477.0" mnemonicParsing="false" onAction="#vVoto" text="Voto?" />
+      <Label fx:id="lblR" layoutX="248.0" layoutY="481.0" text="Resultado" />
+      <Separator layoutY="510.0" prefHeight="3.0" prefWidth="325.0" style="-fx-background-color: black;" />
+      <Label layoutX="8.0" layoutY="523.0" text="Contagem" />
+      <Label fx:id="lblContagem" layoutX="70.0" layoutY="523.0" prefHeight="17.0" prefWidth="164.0" />
+      <Button fx:id="btnContar" layoutX="249.0" layoutY="519.0" mnemonicParsing="false" onAction="#clicouContagem" text="Contar" />
+   </children>
+</AnchorPane>
